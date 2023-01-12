@@ -7,7 +7,7 @@ on:
      required: true
 
 env:
-  BUCKET: praditi-buc
+  BUCKET: aarushi-backend2
   TFSTATE_FILE: practice.tfstate
   aws-region: ${{ github.event.inputs.region }}
   # aws-region: ap-south-1
