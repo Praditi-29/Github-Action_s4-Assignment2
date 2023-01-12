@@ -10,6 +10,10 @@ variable "ModuleVar_Tags" {
   type = map(any)
 }
 
+variable "Vol_Tags" {
+  type = map(any)
+}
+
 # variable "BucketNames" {
 #   type = map(any)
 

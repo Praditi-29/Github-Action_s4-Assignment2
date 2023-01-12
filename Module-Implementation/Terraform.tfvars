@@ -4,6 +4,13 @@ ModuleVar_Tags = {
   Purpose = "AWSTraining_Praditi"
 }
 
+Vol_Tags = {
+  Name    = "Praditi"
+  Owner   = "Praditi-CloudEQ"
+  Purpose = "AWSTraining_Praditi"
+}
+
+
 ModuleVar_Instance_type = "t2.micro"
 
 ModuleVar_AMI-Id = "ami-08bd8e5c51334492e"
