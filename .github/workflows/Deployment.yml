@@ -39,10 +39,10 @@ jobs:
           cd Module-Implementation
           terraform init -reconfigure -backend-config="bucket=${{env.BUCKET}}" -backend-config="key=${{env.TFSTATE_FILE}}"
       
-      # - name: terraform plan
-      #   run: |
-      #     cd Module-Implementation
-      #     terraform plan -var-file="Terraform.tfvars"
+      - name: terraform plan
+        run: |
+          cd Module-Implementation
+          terraform plan -var-file="Terraform.tfvars"
       # - name: terraform apply
       
       #   run: |
@@ -66,10 +66,10 @@ jobs:
          aws-secret-access-key: ${{secrets.AWS_SECRET_ACCESS_KEY}}
          aws-session-token: ${{secrets.AWS_SESSION_TOKEN}}
          Aws-region: ${{env.aws-region}}
-     - name: terraform plan
-       run: |
-         cd Module-Implementation
-         terraform plan -var-file="Terraform.tfvars"
+    #  - name: terraform plan
+    #    run: |
+    #      cd Module-Implementation
+    #      terraform plan -var-file="Terraform.tfvars"
      - name: terraform apply
       
        run: |
