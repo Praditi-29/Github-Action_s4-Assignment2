@@ -14,3 +14,7 @@ variable "Tags" {
     description = "Necessary Tags to Apply"
 }
 
+variable "Vol-Tags" {
+    type = map(any)
+    description = "Necessary Tags to Apply"
+}
