@@ -4,6 +4,7 @@ module "EC2-Instance" {
   AMI-Id        = var.ModuleVar_AMI-Id
   Instance_type = var.ModuleVar_Instance_type
   Tags          = var.ModuleVar_Tags
+  Vol-Tags      = var.ModuleVar_Tags
 }
 
 # #MODULE CREATING S3 BUCKETS WITH FOR_EACH LOOP
