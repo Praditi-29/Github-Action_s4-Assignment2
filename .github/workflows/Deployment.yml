@@ -50,11 +50,11 @@ jobs:
       #     terraform apply -var-file="Terraform.tfvars" -auto-approve   
   terraform_plan_apply:
    needs: terraform_init
-    name: terraform
-    runs-on: ubuntu-latest
+   name: terraform
+   runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup terraform hashicorp
-        uses: hashicorp/setup-terraform@v2 
+   steps:
+     - name: Checkout
+       uses: actions/checkout@v3
+     - name: Setup terraform hashicorp
+       uses: hashicorp/setup-terraform@v2 
