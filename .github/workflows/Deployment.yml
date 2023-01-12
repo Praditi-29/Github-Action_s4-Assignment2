@@ -50,8 +50,8 @@ jobs:
       #     terraform apply -var-file="Terraform.tfvars" -auto-approve   
   terraform_plan_apply:
     needs: terraform_init
-    name: terraform
-    # runs-on: ubuntu-latest
+     name: terraform
+     runs-on: ubuntu-latest
 
     # steps:
     #   - name: Checkout
@@ -70,12 +70,12 @@ jobs:
       #     Aws-region: ${{env.aws-region}}
 
       
-      - name: terraform plan
-        run: |
-          cd Module-Implementation
-          terraform plan -var-file="Terraform.tfvars"
-      - name: terraform apply
+       - name: terraform plan
+         run: |
+           cd Module-Implementation
+           terraform plan -var-file="Terraform.tfvars"
+       - name: terraform apply
       
-        run: |
-          cd Module-Implementation
-          terraform apply -var-file="Terraform.tfvars" -auto-approve   
+         run: |
+           cd Module-Implementation
+           terraform apply -var-file="Terraform.tfvars" -auto-approve   
