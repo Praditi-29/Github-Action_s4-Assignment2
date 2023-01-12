@@ -13,7 +13,7 @@ Vol_Tags = {
 
 ModuleVar_Instance_type = "t2.micro"
 
-ModuleVar_AMI-Id = "ami-08bd8e5c51334492e"
+ModuleVar_AMI-Id = "ami-0b5eea76982371e91"
 
 # BucketNames = {
 #   "1" = {
