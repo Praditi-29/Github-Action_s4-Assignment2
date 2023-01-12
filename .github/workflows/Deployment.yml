@@ -1,10 +1,10 @@
 name: deploy
 on:
   workflow_dispatch:
-  #  inputs:
-  #   region:
-  #    description: "Region"
-  #    required: true
+   inputs:
+    region:
+     description: "Region"
+     required: true
 
 env:
   BUCKET: praditi-buc
