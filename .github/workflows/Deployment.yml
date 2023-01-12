@@ -9,8 +9,8 @@ on:
 env:
   BUCKET: praditi-buc
   TFSTATE_FILE: practice.tfstate
-  # aws-region: ${{ github.event.inputs.region }}
-  aws-region: ap-south-1
+  aws-region: ${{ github.event.inputs.region }}
+  # aws-region: ap-south-1
 
 jobs:
   terraform_init:
