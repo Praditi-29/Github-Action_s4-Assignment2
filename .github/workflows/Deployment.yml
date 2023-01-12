@@ -1,11 +1,15 @@
-name: dep
+name: deploy
 on:
   workflow_dispatch:
+   inputs:
+    region:
+     description: "Region"
+     required: true
 
 env:
   BUCKET: praditi-buc
   TFSTATE_FILE: practice.tfstate
-  aws-region: ap-south-1
+  aws-region: ${{ github.event.inputs.region }}
 
 jobs:
   terraform_plan:
