@@ -6,3 +6,4 @@ resource "aws_instance" "Ec2_Instance" {
     volume_tags = var.Vol-Tags
 }
 
+
